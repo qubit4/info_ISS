@@ -1,7 +1,7 @@
 # prints the names of astronauts currently on the ISS
+import requests
 
 def astros_info():
-    import requests
 
     url = "http://api.open-notify.org/astros.json"
     response = requests.get(url)
