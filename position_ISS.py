@@ -1,8 +1,9 @@
 # provides current ISS coordinates
+import requests
+import pandas as pd
+
 
 def position_info():
-    import requests
-    import pandas as pd
 
     url = "http://api.open-notify.org/iss-now.json"
     response = requests.get(url)
